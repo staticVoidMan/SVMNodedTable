@@ -1,0 +1,72 @@
+# SVM gitignore for OSX / Xcode / Obj-C
+
+##########
+# OSX
+##########
+# ref: http://www.westwind.com/reference/os-x/invisibles.html
+
+# Desktop Services Store (positioning etc)
+.DS_Store
+
+.AppleDouble
+.LSOverride
+*.swp
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+# Thumbnails
+._*
+
+##########
+# Xcode
+##########
+# ref: http://www.gravitywell.co.uk/blog/post/useful-gitignore-file-for-xcode-explained
+# ref: http://stackoverflow.com/a/12021580/2857130
+# 
+# .hmap 		- http://prod.lists.apple.com/archives/xcode-users/2013/May/msg00064.html
+# *.xcworkspace		- http://stackoverflow.com/a/10960309/2857130
+# *.xccheckout		- http://stackoverflow.com/a/19260712/2857130
+# .pbxuser 		- https://wincent.com/wiki/Handling_pbxuser_and_mode1_files_in_Xcode
+# .pbxuser 		- http://lists.apple.com/archives/xcode-users/2004/Jan/msg00193.html
+# .mode1 		- https://wincent.com/wiki/Handling_pbxuser_and_mode1_files_in_Xcode
+# .mode1v3 		- http://lists.apple.com/archives/xcode-users/2007/Oct/msg00465.html
+# .mode2v3 		- http://lists.apple.com/archives/xcode-users/2007/Oct/msg00465.html
+# .perspectivev3 	- http://stackoverflow.com/q/5223297/2857130
+
+DerivedData/
+*~.nib
+*.ipa
+*.hmap
+
+# Pre-compiled object files that makes compile time shorter
+build/
+
+# User specific files
+xcuserdata
+
+# Workspace settings including View (Navigator, Debug, and Utilities panes) and Editor states
+*.xcworkspace
+
+# Metadata about what repositories are used in a workspace (For single project in a single repository, it can be ignored)
+*.xccheckout
+
+# Currently active target, executable, build style, window/view sizes, bookmarks, breakpoints, custom executables, smart groups and code sense settings
+*.pbxuser
+
+# Workspace configuration like window positions and sizes, including sizes of sub-views 
+*.mode1v3
+*.mode2v3
+
+*.perspectivev3
+
+# Whitelist default private settings
+!default.xcworkspace
+!default.pbxuser
+!default.mode1v3
+!default.mode2v3
+!default.perspectivev3
+
+# Deprecated classes, for example, if you re-created a new class with the same name as an older one
+*.moved-aside
